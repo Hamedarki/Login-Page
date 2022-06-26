@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Styles/css/Style.css">
+    <link rel="icon" type="image/x-icon" href="Styles/icons/icons8-login-rounded-96.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="con">
+                <header class="header">
+                    <h2>Log in</h2>
+                    <p>login here using your username and password</p>
+                </header>
+                <br>
+                <div class="field-information">
+                    <span class="input-name"><i class="fa fa-user-circle" style="font-size:18px ;"></i></span>
+                    <input type="text" class="form-input" id="text-input" placeholder="Username" required>
+                    <br>
+                    <span class="input-password"><i class="fa fa-key" style="font-size:18px ;"></i></span>
+                    <input type="password" class="form-input" id="password-input" placeholder="Password" required>
+                    <span class="fa fa-eye" aria-hidden="true" type="button" id="eye" style="font-size:18px ;"></span>
+                    <br>
+                    <button class="log-in" id="log">log In</button>
+                </div>
+                <div class="other">
+                    <button class="forget">Forget Password?</button>
+                    <button class="sign-in">Sign up <i class="fa fa-user-plus"></i></button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="Java Script/app.js"></script>
+</body>
+
+</html>

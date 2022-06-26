@@ -1,0 +1,29 @@
+@mixin hoverEffect {
+    &:hover {
+        animation: ani9 0.4s ease-in-out infinite alternate;
+    }
+    @keyframes ani9 {
+        0% {
+            transform: translateY(3px);
+            transition: all ease-in-out .7s;
+        }
+        100% {
+            transform: translateY(5px);
+            transition: all ease-in-out .7s;
+        }
+    }
+}
+
+@mixin fontStyle($color, $fontWeight, $fontSize, $background) {
+    color: $color;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    background-color: $background;
+}
+
+;
+@mixin borderStyle($border, $raduis, $padding) {
+    border: $border;
+    border-radius: $raduis;
+    padding: $padding;
+}

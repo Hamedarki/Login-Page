@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap");
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+input,
+button[type=text] {
+    font-family: inherit;
+}
+
+form {
+    width: 60vh;
+    min-height: 70vh;
+    height: auto;
+    text-align: center;
+    margin: 7% auto;
+    border: none;
+    border-radius: 1rem;
+    padding: 0;
+    padding: 2rem;
+    font-size: 1.5rem;
+    box-shadow: 0 9px 50px hsla(20deg, 67%, 75%, 0.31);
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form .con {
+    display: flex;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.header h2 {
+    color: #333;
+    font-weight: 900;
+    font-size: 3rem;
+    background-color: inherit;
+    margin: 2% auto 4%;
+}
+
+.header p {
+    color: #333;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: inherit;
+    margin: 1% auto 3%;
+}
+
+.field-information {
+    margin: auto;
+}
+
+.field-information .input-name {
+    color: #333;
+    font-weight: inherit;
+    font-size: inherit;
+    background-color: rgba(255, 238, 255, 0.9333333333);
+    margin: 3% auto;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0.6rem 0 0 0.6rem;
+    padding: 1rem 0rem 1rem 0.8rem;
+    left: 0.7rem;
+    border-right: none;
+    z-index: 5;
+    width: 5%;
+}
+
+.field-information .input-password {
+    color: #333;
+    font-weight: inherit;
+    font-size: inherit;
+    background-color: rgba(255, 238, 255, 0.9333333333);
+    margin: 3% auto;
+    border: 1px solid black;
+    border-radius: 0.6rem 0 0 0.6rem;
+    padding: 1rem 0rem 1rem 0.8rem;
+    position: relative;
+    left: 2.9rem;
+    border-right: none;
+    z-index: 5;
+    width: 5%;
+}
+
+.field-information #password-input {
+    position: relative;
+    left: 1.9rem;
+    cursor: pointer;
+}
+
+.field-information #eye {
+    background-color: rgba(255, 238, 255, 0.9333333333);
+    position: relative;
+    right: 2rem;
+    top: 0.2rem;
+    cursor: pointer;
+    border: black 1px solid;
+    padding: 1rem;
+    border-left: none;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.field-information .form-input {
+    background-color: rgba(255, 238, 255, 0.9333333333);
+    outline: none;
+    border: black solid 1px;
+    margin: 2% auto;
+    padding: 1.1rem 0rem 1.1rem 0.8rem;
+    width: 80%;
+    border-right: none;
+    cursor: pointer;
+}
+
+.field-information #text-input {
+    width: 25.2rem;
+    border: 1px solid black;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.field-information #password-input {
+    position: relative;
+    right: 3rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+}
+
+.log-in {
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: rgba(255, 238, 255, 0.9333333333);
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    width: 80%;
+    margin: 3% auto;
+    margin-bottom: 1rem;
+    outline: 1px solid;
+    cursor: pointer;
+}
+
+.log-in:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+        transition: all ease-in-out 0.7s;
+    }
+    100% {
+        transform: translateY(5px);
+        transition: all ease-in-out 0.7s;
+    }
+}
+
+.other {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.other button {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    width: 40%;
+    outline: 1px solid;
+    cursor: pointer;
+}
+
+.other button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+        transition: all ease-in-out 0.7s;
+    }
+    100% {
+        transform: translateY(5px);
+        transition: all ease-in-out 0.7s;
+    }
+}
+
+.other .sign-in {
+    background-color: #6EBF8B;
+    margin: 5% auto;
+    margin-left: 0.5rem;
+    height: 10vh;
+    outline: 1px solid;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.other .forget {
+    margin: 5% auto;
+    margin-right: 0.5rem;
+    height: 10vh;
+    outline: 1px solid;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+
+/*# sourceMappingURL=Style.css.map */
